@@ -16,7 +16,8 @@ Gry
 Komputer losuje liczbę od 1 do 100. 
 Następnie:
 - prosi o podanie liczby z klawiatury;
-- sprawdza, czy wprowadzony napis, to rzeczywiście liczba i w razie błędu wyświetla komunikat: "To nie jest liczba";
+- sprawdza, czy wprowadzony napis, to rzeczywiście liczba 
+i w razie błędu wyświetla komunikat: "To nie jest liczba";
 - wyświetla komunikat: "Za mało!", "Za dużo!", lub "Zgadłeś!".
 ```
 
@@ -50,50 +51,54 @@ Program:
 - losuje 6 liczb z zakresu i wyświetla je na ekranie;
 - informuje gracza, czy trafił przynajmniej "trójkę".
 ```
-
-##### Przykład rozgrywki
-
-```
-
-```
 ---
 ### 3. Gra w zgadywanie liczb 2 
 
 ##### Opis
 ```
+Użytkownik wymyśla liczbę z zakresu 1-1000, 
+a komputer zgaduje ją maksymalnie w 10 ruchach!
 
-```
-
-##### Przykład rozgrywki
-
-```
-
+Zadaniem gracza jest udzielanie odpowiedzi "więcej", "mniej", "trafiłeś".
 ```
 ---
 ### 4. Kostka do gry
 
 ##### Opis
 ```
+W grach planszowych i papierowych RPG używa się wielu rodzajów kostek do gry, 
+nie tylko tych dobrze znanych, sześciennych. Jedną z popularniejszych kości 
+jest np. kostka dziesięciościenna, a nawet stuścienna!
 
+Ponieważ w grach kośćmi rzuca się często, pisanie za każdym razem 
+np. "rzuć dwiema kostkami dziesięciościennymi, a do wyniku dodaj 20", 
+byłoby żmudne, czasochłonne i marnowałoby ogromne ilości papieru.
+
+W takich sytuacjach używa się kodu skracającego polecenie np.: "rzuć 2D10+20".
+
+Program:
+- przyjmie w parametrze taki kod w postaci String;
+- rozpoznaje wszystkie dane wejściowe:
+        rodzaj kostki,
+        liczbę rzutów,
+        modyfikator,
+- wykonuje symulację rzutów i zwróci wynik.
+
+Typy kostek występujące w grach:
+D3, D4, D6, D8, D10, D12, D20, D100.
 ```
 
-##### Przykład rozgrywki
-
-```
-
-```
----
 ### 5. Wyszukiwarka najpopularniejszych słów
 
 ##### Opis
 ```
-
-```
-
-##### Przykład rozgrywki
-
-```
-
+Program:
+- Wywołuje pobieranie dla wybranych serwisów internetowych;
+- Pomija wszystkie elementy krótsze niż 3-znakowe;
+- Tworzy tablicę elementów wykluczonych np. oraz, ponieważ;
+- Wczytuje utworzony plik popular_words.txt i na jego 
+podstawie tworzy plik filtered_popular_words.txt, który 
+zawiera wszystkie znalezione słowa, pomijając słowa wykluczone.
 ```
 ---
 
