@@ -11,7 +11,7 @@ public class GuessNumberApp {
         int liczba = losowanie.nextInt(101);
         //System.out.println(liczba);
 
-        System.out.println("Wylosowano liczbę. Zgadnij jaką!: ");
+        System.out.println("Wylosowano liczbę z zakresu 1-100. Zgadnij jaką!: ");
 
         Scanner scan = new Scanner(System.in);
 

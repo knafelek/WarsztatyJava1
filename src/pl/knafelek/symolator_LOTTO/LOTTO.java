@@ -1,4 +1,4 @@
-package pl.knafelek.workshops_guess_number;
+package pl.knafelek.symolator_LOTTO;
 
 import java.util.Random;
 
@@ -12,7 +12,7 @@ public class LOTTO {
             liczby[i] = nextVal++;
         }
 
-        int zakres = liczby.length; // znacznik - na jakiej kulce skońćzyliśmy
+        int zakres = liczby.length; // znacznik - na jakiej kulce skończyliśmy
         int[] wylosowane = new int [6];
 
         for (int i = 0; i < wylosowane.length; i++){
