@@ -24,14 +24,19 @@ i w razie błędu wyświetla komunikat: "To nie jest liczba";
 ##### Przykład rozgrywki
 
 ```
-Zgadnij liczbę: abc
-To nie jest liczba!
-Zgadnij liczbę: 50
-Za mało!
-Zgadnij liczbę: 75
-Za dużo!
-Zgadnij liczbę: 63
-Zgadłeś!
+Wylosowano liczbę z zakresu 1-100. Zgadnij jaką!: 
+abc
+To nie jest liczba! Podaj raz jeszcze: 
+50
+To za mało! Próbuj dalej: 
+70
+To za mało! Próbuj dalej: 
+90
+To za dużo! Próbuj dalej: 
+80
+To za mało! Próbuj dalej: 
+85
+Zgadłeś! 
 ```
 ---
 ### 2. Symulator LOTTO
