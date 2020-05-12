@@ -7,26 +7,24 @@ import java.util.Scanner;
 public class GuessNumberApp {
 
     public static void main(String[] args) throws InputMismatchException {
-        Random losowanie = new Random();
-        int liczba = losowanie.nextInt(101);
-        //System.out.println(liczba);
+        Random randomNumber = new Random();
+        int number = randomNumber.nextInt(101);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("Wylosowano liczbę z zakresu 1-100. Zgadnij jaką!: ");
 
-        Scanner scan = new Scanner(System.in);
-
-        int proba;
+        int guessNumber;
         do{
             while (!scan.hasNextInt()) {
                 scan.next();
                 System.err.println("To nie jest liczba! Podaj raz jeszcze: ");
             }
-            proba=scan.nextInt();
+            guessNumber=scan.nextInt();
 
-            if(proba>liczba){
+            if(guessNumber>number){
                 System.out.println("To za dużo! Próbuj dalej: ");
 
-            } else if (proba<liczba){
+            } else if (guessNumber<number){
                 System.out.println("To za mało! Próbuj dalej: ");
 
             } else {
